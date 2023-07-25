@@ -15,25 +15,81 @@
     <!-- custom color -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'justice-color': '#B68C5A',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'justice-color': '#B68C5A',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <style>
-        .eb-gara{
+        .eb-gara {
             font-family: 'EB Garamond', serif;
         }
     </style>
 </head>
+
 <body class="eb-gara">
     <header>
-        
+        <!-- navbar -->
+        <div class="navbar bg-base-100 lg:px-16 mt-6">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-lg font-sans">Home </a></li>
+                        <li><a class="text-lg font-sans">Services <img src="Frame.jpg" alt=""></a></li>
+                        <li><a class="text-lg font-sans">Cases <img src="Frame.jpg" alt=""></a></li>
+                        <li><a class="text-lg font-sans">Blog <img src="Frame.jpg" alt=""></a></li>
+                        <li><a class="text-lg font-sans"> Contact Us <img src="Frame.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl"> <img src="images/logo2.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-xl font-sans">Home</a></li>
+                    <li><a class="text-xl font-sans">Services <img src="Frame.jpg" alt=""></a></li>
+                    <li><a class="text-xl font-sans">Cases <img src="Frame.jpg" alt=""></a></li>
+                    <li><a class="text-xl font-sans">Blog <img src="Frame.jpg" alt=""></a></li>
+                    <li><a class="text-xl font-sans">Contact Us <img src="Frame.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-justice-color text-white px-4 text-lg font-sans">Free Consultation</a>
+            </div>
+        </div>
+        <!-- nav done -->
+        <!-- banner section -->
+        <div class="px-8 pt-10 lg:px-16 py-20">
+            <div class="hero min-h-screen " style="background-image: url('../images/banner.png');">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-7 text-2xl font-extrabold text-[#FFF] lg:text-5xl">We Provide Effective Legal
+                            Solutions</h1>
+                        <p class="mb-7 text-xs font-sans text-[#E7E7E7] lg:text-sm">There are many variations of
+                            passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+                            by injected humour.</p>
+                        <input type="text" placeholder="Search your Services"
+                            class="px-4 lg:px-16 py-3 rounded-md mr-3">
+                        <input type="submit" value="Search"
+                            class="btn bg-justice-color text-white px-2 lg:px-4 text-lg font-sans">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner done -->
     </header>
     <main>
 
